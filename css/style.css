@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Serif:wght@600&display=swap');
+
+:root{
+    --color-texto:rgb(0, 59, 74);
+    --texto-blanco:rgb(255, 255, 255);
+    --contraste-lila:rgb(191, 12, 240);
+    --contraste-lila-claro:rgb(229, 225, 254);
+    --fondo-body:rgb(247, 247, 247);
+    --texto-gris:rgb(158, 157, 171);
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--fondo-body);
+}
+
+header{
+    width: 100vw;
+    padding: 20px 10px;
+    /* background-color: brown; */
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+}
+
+header img{
+    height: 50px;
+}
+
+
+.header__nav{
+    background-color: aquamarine;
+}
+
+.nav__ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.nav__ul__li{
+    background-color: antiquewhite;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero__container{
+    background-image: url(../img/hero-image-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -220px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color: var(--color-texto);
+}
+
+main{
+    color: var(--color-texto);
+}
+
+.main__container{
+    padding: 20px;
+}
+
+input{
+    width: 90%;
+}
+
+button{
+    background-color: var(--color-texto);
+    color: var(--texto-blanco);
+}
+
+button:hover{
+    background-color: var(--contraste-lila-claro);
+}
+
+article a{
+    background-color: var(--color-texto);
+    color: var(--texto-blanco);
+}
+
+article a:hover{
+    background-color: var(--contraste-lila-claro);
+}
+
+p{
+    font-size: 1rem;
+}
+
+label{
+    display: block;
+}
+
+section{
+    background-color: var(--contraste-lila-claro);
+}
+
+/* figure{
+    padding: 20px;
+    background-color: aqua;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+section img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+article{
+    width: 100%;
+} */
+
+footer{
+    width: 100%;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--color-texto);
+    color: var(--texto-blanco);
+}
+
+.svg__img{
+    color: var(--texto-blanco);
+    fill: var(--texto-blanco);
+}
+
+/*DISPOSITIVOS MEDIANOS*/
+@media screen and (min-width: 480px) and (max-width:768px){
+    body{
+        background-color: aqua;
+    }
+}
+
+/*DISPOSITIVOS DESKTOP*/
+@media screen and (min-width: 769px) and (max-width:1024px){
+    
+}
