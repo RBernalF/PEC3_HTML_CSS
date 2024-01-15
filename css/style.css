@@ -47,6 +47,10 @@ header img{
     text-transform: uppercase;
 }
 
+.nav__a{
+    text-decoration: none;
+}
+
 .hero__container{
     background-image: url(../img/hero-image-home.jpg);
     background-repeat: no-repeat;
@@ -82,9 +86,17 @@ button:hover{
     background-color: var(--contraste-lila-claro);
 }
 
+.form__button{
+    padding: 10px;
+    border-radius: 5px;
+}
+
 article a{
     background-color: var(--color-texto);
     color: var(--texto-blanco);
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 5px;
 }
 
 article a:hover{
@@ -127,6 +139,15 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     background-color: var(--color-texto);
+    color: var(--texto-blanco);
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
     color: var(--texto-blanco);
 }
 
