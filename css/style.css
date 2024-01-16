@@ -36,6 +36,7 @@ header img{
 }
 
 
+
 .header__nav{
     width: max-content;
     /* background-color: aquamarine; */
@@ -418,6 +419,16 @@ blockquote{
 
 /*---------------------------------------------------------*/
 
+/* VIDEOS CSS*/
+
+iframe{
+    width: 100%;
+    height: 200px;
+}
+
+/*---------------------------------------------------------*/
+
+
 
 footer{
     margin-top: 80px;
@@ -450,10 +461,7 @@ footer a{
     color: var(--texto-blanco);
 }
 
-.svg__img{
-    color: var(--texto-blanco);
-    fill: var(--texto-blanco);
-}
+
 
 /*DISPOSITIVOS MEDIANOS*/
 @media screen and (min-width: 480px) and (max-width:768px){
