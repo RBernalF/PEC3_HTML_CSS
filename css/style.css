@@ -19,6 +19,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-color: var(--fondo-body);
+    overflow-x: hidden;
 }
 
 header{
@@ -82,6 +83,14 @@ h1{
     color: var(--color-texto);
 }
 
+.hero__container h1{
+    font-family: 'Lato', sans-serif;
+    width: 350px;
+    margin-left: 20px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
 main{
     color: var(--color-texto);
 }
@@ -92,6 +101,26 @@ main{
 
 input{
     width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid var(--contraste-lila-claro);
+    border-radius: 5px;
+}
+
+
+form p a{
+    color: var(--contraste-lila);
+    text-decoration:none;
+    padding: 2px 0;
+    border-bottom: 1px dotted var(--contraste-lila);
+}
+
+label{
+    background-color: aqua;
+}
+
+input[type="checkbox"]{
+    background-color: aqua;
 }
 
 button{
@@ -106,6 +135,8 @@ button:hover{
 .form__button{
     padding: 10px;
     border-radius: 5px;
+    margin: 20px 0 40px 0;
+    text-transform: uppercase;
 }
 
 article a{
@@ -130,27 +161,44 @@ label{
 
 section{
     background-color: var(--contraste-lila-claro);
+    width: 100vw;
 }
 
-/* figure{
-    padding: 20px;
+
+figure img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+figcaption{
+    text-align: right;
+    font-size: .8rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.article__text{
     background-color: aqua;
-    width: 100%;
-    padding: 20px;
-    position: relative;
+    margin: 0 10px 0 30px;
+    width: 87%;
+    /* padding: 0  20px 0 40px; */
 }
 
-section img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.article__text p{
+    margin-bottom: 30px;
 }
 
-article{
-    width: 100%;
-} */
+.article__text a{
+    padding: 10px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
 
 footer{
+    margin-top: 80px;
     width: 100%;
     justify-items: center;
     display: grid;
@@ -161,6 +209,18 @@ footer{
 
 footer ul{
     list-style: none;
+}
+
+.redes__sociales{
+    display: flex;
+    gap: 10px;
+}
+
+.footer__politicas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
 }
 
 footer a{
