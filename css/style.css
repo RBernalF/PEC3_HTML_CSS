@@ -526,6 +526,7 @@ footer ul{
     text-align: center;
 }
 
+
 footer a{
     text-decoration: none;
     color: var(--texto-blanco);
@@ -542,7 +543,7 @@ footer a:hover{
 
 
 /*DISPOSITIVOS MEDIANOS*/
-@media screen and (min-width: 480px) and (max-width:768px){
+@media screen and (min-width: 480px){
     body{
         /* background-color: aqua; */
     }
@@ -566,7 +567,7 @@ footer a:hover{
     article{
         display: flex;
         align-items: center;
-        background-color: bisque;
+        /* background-color: bisque; */
         width: 95vw;
         margin: 0 auto;
     }
@@ -597,6 +598,62 @@ footer a:hover{
 }
 
 /*DISPOSITIVOS DESKTOP*/
-@media screen and (min-width: 769px) and (max-width:1024px){
-    
+@media screen and (min-width: 769px){
+    body{
+        /* background-color: aqua; */
+    }
+
+    .hero__container{
+        background-color: azure;
+        background-position: 0 -200px;
+    }
+
+    .hero__container img{
+        height: auto;
+    }
+
+    .hero__container h1{
+        /* background-color: aqua; */
+        width: 30%;
+        margin-left: 22%;
+    }
+
+    .main__container{
+        width: 80vw;
+        display: flex;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .flex__container{
+        width: 50%;
+    }
+
+    form{
+        padding-top: 40px;
+    }
+
+    article{
+        width: 80vw;
+    }
+
+    .article__text{
+        width: 50vw;
+    }
+
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__politicas{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .center__div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
 }
