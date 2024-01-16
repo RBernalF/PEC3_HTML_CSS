@@ -19,16 +19,14 @@ body{
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
 }
 
 header{
     width: 100vw;
-    padding: 20px 10px;
-    /* background-color: brown; */
-    display: grid;
+    padding: 20px 2px;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
 }
 
 header img{
@@ -39,7 +37,6 @@ header img{
 
 .header__nav{
     width: max-content;
-    /* background-color: aquamarine; */
     margin-right: 20px;
 }
 
@@ -48,7 +45,7 @@ header img{
     display: grid;
     grid-template-columns: 1fr 20px 1fr;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
 }
 
@@ -93,21 +90,30 @@ h1{
 
 main{
     color: var(--color-texto);
+    margin: 0;
 }
 
 .main__container{
     padding: 20px;
+    margin-bottom: 0;
     background-color: var(--fondo-body);
+}
+
+.main__container h2{
+    font-size: 2rem;
 }
 
 input{
     width: 90%;
     padding: 8px;
-    margin: 5px 0;
+    margin: 10px 0px;
     border: 1px solid var(--contraste-lila-claro);
     border-radius: 5px;
 }
 
+form p{
+    font-size: .8rem;
+}
 
 form p a{
     color: var(--contraste-lila);
@@ -116,12 +122,20 @@ form p a{
     border-bottom: 1px dotted var(--contraste-lila);
 }
 
-label{
-    background-color: aqua;
+.check{
+    position: relative;
+    width: max-content;
+    height: 50px;
+    padding-left: 20px;
+    font-size: .8rem;
 }
 
+
 input[type="checkbox"]{
-    background-color: aqua;
+    position: absolute;
+    top: 2px;
+    left: -105px;
+    margin: 0;
 }
 
 button{
@@ -138,13 +152,15 @@ button:hover{
     border-radius: 5px;
     margin: 20px 0 40px 0;
     text-transform: uppercase;
+    border: none;
+    cursor: pointer;
 }
 
 article a{
     background-color: var(--color-texto);
     color: var(--texto-blanco);
     text-decoration: none;
-    padding: 4px;
+    padding: 8px;
     border-radius: 5px;
 }
 
@@ -153,7 +169,7 @@ article a:hover{
 }
 
 p{
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 label{
@@ -163,6 +179,8 @@ label{
 section{
     background-color: var(--contraste-lila-claro);
     width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
 
 
@@ -173,15 +191,15 @@ figure img{
 
 figcaption{
     text-align: right;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 h3{
-    font-size: 1.5rem;
+    margin-top: 0;
+    font-size: 1.4rem;
 }
 
 .article__text{
-    background-color: aqua;
     margin: 0 10px 0 30px;
     width: 87%;
     /* padding: 0  20px 0 40px; */
@@ -235,6 +253,11 @@ h3{
 .category__span a{
     padding: 7px;
     border-radius: 0;
+    color:var(--texto-blanco);
+}
+
+.category__span a:hover{
+    background-color: var(--contraste-lila);
 }
 
 .article__blog img{
@@ -254,6 +277,10 @@ h3{
     font-size: 1.5rem;
 }
 
+.article__blog h2 a:hover{
+    color: var(--contraste-lila);
+}
+
 .article__text .read__more{
     background-color: initial;
     color: var(--contraste-lila);
@@ -263,6 +290,12 @@ h3{
     border-radius: 0;
     font-size: 1rem;
     margin-bottom: 20px;
+}
+
+
+.article__text .read__more:hover{
+    color: var(--color-texto);
+    border-bottom: 1px dotted var(--color-texto);
 }
 
 .button__page{
@@ -283,9 +316,19 @@ h3{
     color: var(--color-texto);
 }
 
+.button__box:hover{
+    background-color: var(--contraste-lila);
+    border: 1px solid var(--contraste-lila);
+    color: var(--texto-blanco);
+}
+
+.button__box a:hover{
+    color: var(--texto-blanco);
+}
+
 .selected{
     background-color: var(--contraste-lila);
-    border: none;
+    border: 1px solid var(--contraste-lila);
 }
 
 .selected a {
@@ -351,6 +394,16 @@ h3{
     font-size: 1.8rem;
 }
 
+.main__info section h2 a{
+    color:var(--color-texto);
+    border: none;
+}
+
+.main__info section h2 a:hover{
+    color: var(--contraste-lila);
+    border: none;
+}
+
 .main__info section p{
     font-size: .9rem;
 }
@@ -411,10 +464,19 @@ blockquote{
     border: 1px solid var(--color-texto);
 }
 
+.button__category:hover{
+    background-color: var(--contraste-lila);
+    border: 1px solid var(--contraste-lila);
+}
+
 .button__category a{
     color: var(--color-texto);
     text-decoration: none;
     font-size: .9rem;
+}
+
+.button__category a:hover{
+    color: var(--texto-blanco);
 }
 
 /*---------------------------------------------------------*/
@@ -431,8 +493,8 @@ iframe{
 
 
 footer{
-    margin-top: 80px;
     width: 100%;
+    padding: 20px 10px;
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -449,6 +511,14 @@ footer ul{
     gap: 10px;
 }
 
+.redes__sociales img{
+    width: 25spx;
+}
+
+.redes__sociales img:hover{
+    opacity: 0.7;
+}
+
 .footer__politicas{
     display: flex;
     flex-direction: column;
@@ -461,13 +531,69 @@ footer a{
     color: var(--texto-blanco);
 }
 
+footer a:hover{
+    color: var(--contraste-lila-claro);
+}
+
+#svg__img{
+    width: 100px;
+}
+
 
 
 /*DISPOSITIVOS MEDIANOS*/
 @media screen and (min-width: 480px) and (max-width:768px){
     body{
-        background-color: aqua;
+        /* background-color: aqua; */
     }
+
+    .hero__container{
+        background-position: -80px;
+    }
+
+    .hero__container h1{
+        width: 500px;
+    }
+
+    input{
+        max-width: 800px;
+    }
+
+    form p{
+        max-width: 650px;
+    }
+    
+    article{
+        display: flex;
+        align-items: center;
+        background-color: bisque;
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    article:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    
+    figure img{
+        width: 250px;
+    }
+
+    .left__rotated{
+        transform: rotate(-10deg);
+        text-align: right;
+    }
+
+    .article__text{
+        margin: 0;
+    }
+
+    .right__rotated{
+        transform: rotate(10deg);
+        text-align:center;
+    }
+
+
 }
 
 /*DISPOSITIVOS DESKTOP*/
