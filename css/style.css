@@ -186,7 +186,7 @@ section{
 
 figure img{
     width: 100%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 figcaption{
@@ -202,6 +202,7 @@ h3{
 .article__text{
     margin: 0 10px 0 30px;
     width: 87%;
+    padding-bottom: 20px;
     /* padding: 0  20px 0 40px; */
 }
 
@@ -221,7 +222,7 @@ h3{
 }
 
 .article__blog{
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-bottom: 20px;
     position: relative;
     height: max-content;
@@ -231,23 +232,24 @@ h3{
 
 .article__blog figure{
     width: 100%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin: 0;
 }
+
 
 .article__blog figcaption{
     background-color: var(--texto-blanco);
     padding: 2px 4px;
     position: absolute;
-    top: 46%;
+    top: 36%;
     right: 2%;
 }
 
 
 .category__span{
     position: absolute;
-    top: 50px;
-    left: 5px;
+    top: 3%;
+    left: 3%;
 }
 
 .category__span a{
@@ -260,21 +262,33 @@ h3{
     background-color: var(--contraste-lila);
 }
 
+.article__container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .article__blog img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.grey__text{
+.article__text .grey__text{
     color: var(--texto-gris);
     font-size: .8rem;
+    margin: 10px;
+}
+
+.article__blog h2{
+    margin-top: 0;
 }
 
 .article__blog h2 a{
     background-color: initial;
     color:var(--color-texto);
     font-size: 1.5rem;
+    text-transform: initial;
+    padding-left: 0;
 }
 
 .article__blog h2 a:hover{
@@ -287,6 +301,7 @@ h3{
     text-transform:initial;
     border-bottom: 1px dotted var(--contraste-lila);
     padding-bottom: 2px;
+    padding-left: 0;
     border-radius: 0;
     font-size: 1rem;
     margin-bottom: 20px;
@@ -594,6 +609,24 @@ footer a:hover{
         text-align:center;
     }
 
+    .article__container{
+        /* background-color: aqua; */
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .article__blog{
+        width: 95%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article__blog:nth-child(even){
+        flex-direction: column;
+    }
 
 }
 
