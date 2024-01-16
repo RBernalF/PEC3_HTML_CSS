@@ -18,7 +18,6 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--fondo-body);
     overflow-x: hidden;
 }
 
@@ -97,6 +96,7 @@ main{
 
 .main__container{
     padding: 20px;
+    background-color: var(--fondo-body);
 }
 
 input{
@@ -191,11 +191,106 @@ h3{
 }
 
 .article__text a{
-    padding: 10px;
     margin: 20px 0;
     text-transform: uppercase;
 }
 
+/* BLOG CSS*/
+
+.main__container h1{
+    font-size: 2.2rem;
+}
+
+.article__blog{
+    background-color: aqua;
+    margin-bottom: 20px;
+    position: relative;
+    height: max-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.article__blog figure{
+    width: 100%;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.article__blog figcaption{
+    background-color: var(--texto-blanco);
+    padding: 2px 4px;
+    position: absolute;
+    top: 46%;
+    right: 2%;
+}
+
+
+.category__span{
+    position: absolute;
+    top: 50px;
+    left: 5px;
+}
+
+.category__span a{
+    padding: 7px;
+    border-radius: 0;
+}
+
+.article__blog img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grey__text{
+    color: var(--texto-gris);
+    font-size: .8rem;
+}
+
+.article__blog h2 a{
+    background-color: initial;
+    color:var(--color-texto);
+    font-size: 1.5rem;
+}
+
+.article__text .read__more{
+    background-color: initial;
+    color: var(--contraste-lila);
+    text-transform:initial;
+    border-bottom: 1px dotted var(--contraste-lila);
+    padding-bottom: 2px;
+    border-radius: 0;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.button__page{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button__box{
+    padding: 8px;
+    background-color: var(--texto-blanco);
+    border: 1px solid var(--color-texto);
+}
+
+.button__box a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+.selected{
+    background-color: var(--contraste-lila);
+    border: none;
+}
+
+.selected a {
+    color: var(--texto-blanco);
+}
+
+/*---------------------------------------------------------*/
 
 footer{
     margin-top: 80px;
