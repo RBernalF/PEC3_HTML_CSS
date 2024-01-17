@@ -560,7 +560,7 @@ footer a:hover{
 /*DISPOSITIVOS MEDIANOS*/
 @media screen and (min-width: 480px){
     body{
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     .hero__container{
@@ -692,10 +692,11 @@ footer a:hover{
     }
 
     .main__container{
-        width: 80vw;
+        width: 100vw;
         display: flex;
         margin: 0 auto;
         gap: 20px;
+        background-color:var(--fondo-body);
     }
 
     .blog__container{
@@ -746,7 +747,36 @@ footer a:hover{
         width: 50vw;
     }
 
+    .entrada__info{
+        /* background-color: blue; */
+        width: 70%;
+    }
+
+    .entrada__container{
+        /* background-color: black; */
+    }
+
+    .recent__articles{
+        /* background-color: aquamarine; */
+        grid-template-columns: 300px;
+    }
+
+
+    .desktop__version img{
+        width: 100%;
+    }
     
+    .desktop__version .article__text{
+        /* background-color: yellow; */
+        width: 95%;
+    }
+
+    .button__categories{
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
     footer{
         grid-template-columns: 1fr 1fr;
