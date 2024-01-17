@@ -503,6 +503,22 @@ iframe{
     height: 200px;
 }
 
+
+.videos__container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.video__text{
+    padding: 0 10px;
+}
+
+.video__text h2{
+    margin-top: 10px;
+}
+
+
+
 /*---------------------------------------------------------*/
 
 
@@ -668,6 +684,21 @@ footer a:hover{
     .button__categories{
         padding-bottom: 80px;
     }
+    
+    #video__info{
+        flex-direction: column;
+    }
+
+    #video__info h1{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .videos__container{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 /*DISPOSITIVOS DESKTOP*/
@@ -776,6 +807,10 @@ footer a:hover{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .videos__container{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     footer{
