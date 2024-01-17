@@ -23,7 +23,8 @@ body{
 }
 
 header{
-    width: 100vw;
+    width: 90vw;
+    margin: 0 auto;
     padding: 20px 2px;
     display: flex;
     justify-content: space-between;
@@ -88,6 +89,10 @@ h1{
     font-weight: 900;
 }
 
+.inicio__h2{
+    font-family: 'Noto Serif', serif;
+}
+
 main{
     color: var(--color-texto);
     margin: 0;
@@ -122,6 +127,11 @@ form p a{
     border-bottom: 1px dotted var(--contraste-lila);
 }
 
+form p a:hover{
+    color: var(--color-texto);
+    border-bottom: 1px dotted var(--color-texto);
+}
+
 .check{
     position: relative;
     width: max-content;
@@ -144,7 +154,7 @@ button{
 }
 
 button:hover{
-    background-color: var(--contraste-lila-claro);
+    background-color: var(--contraste-lila);
 }
 
 .form__button{
@@ -165,11 +175,11 @@ article a{
 }
 
 article a:hover{
-    background-color: var(--contraste-lila-claro);
+    background-color: var(--contraste-lila);
 }
 
 p{
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 label{
@@ -200,7 +210,7 @@ h3{
 }
 
 .article__text{
-    margin: 0 10px 0 30px;
+    margin: 0 10px 0 40px;
     width: 87%;
     padding-bottom: 20px;
     /* padding: 0  20px 0 40px; */
@@ -571,6 +581,12 @@ footer a:hover{
     width: 100px;
 }
 
+.center__div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 /*DISPOSITIVOS MEDIANOS*/
@@ -584,7 +600,7 @@ footer a:hover{
     }
 
     .hero__container h1{
-        width: 500px;
+        width: 100%;
     }
 
     input{
@@ -612,7 +628,7 @@ footer a:hover{
     }
 
     .left__rotated{
-        transform: rotate(-10deg);
+        transform: rotate(-5deg);
         text-align: right;
     }
 
@@ -621,7 +637,7 @@ footer a:hover{
     }
 
     .right__rotated{
-        transform: rotate(10deg);
+        transform: rotate(5deg);
         text-align:center;
     }
 
@@ -708,8 +724,10 @@ footer a:hover{
     }
 
     .hero__container{
-        background-color: azure;
-        background-position: 0 -200px;
+        background-position: initial;
+        height: 600px;
+        align-items: flex-start;
+        background-size:cover;
     }
 
     .hero__container img{
@@ -718,8 +736,10 @@ footer a:hover{
 
     .hero__container h1{
         /* background-color: aqua; */
-        width: 30%;
-        margin-left: 22%;
+        width: 35%;
+        font-size: 3rem;
+        margin-left: 20%;
+        padding-top: 15%;
     }
 
     .main__container{
@@ -744,15 +764,17 @@ footer a:hover{
     }
 
     .flex__container{
-        width: 50%;
+        width: 40%;
+        margin-left: 14%;
     }
 
     form{
         padding-top: 40px;
+        width: 35%;
     }
 
     article{
-        width: 90%;
+        width: 70%;
         height: 100%;
     }
 
@@ -775,7 +797,7 @@ footer a:hover{
     }
 
     .article__text{
-        width: 50vw;
+        width: 40%;
     }
 
     .entrada__info{
@@ -820,12 +842,6 @@ footer a:hover{
     .footer__politicas{
         display: flex;
         flex-direction: row;
-    }
-
-    .center__div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
    
 }
