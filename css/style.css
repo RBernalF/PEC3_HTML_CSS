@@ -9,11 +9,6 @@
     --texto-gris:rgb(158, 157, 171);
 }
 
-/*
-font-family: 'Lato', sans-serif;
-font-family: 'Noto Serif', serif;
-*/
-
 body{
     padding: 0;
     margin: 0;
@@ -47,11 +42,9 @@ header img{
     grid-template-columns: 1fr 20px 1fr;
     justify-content: space-between;
     align-items: flex-end;
-
 }
 
 .nav__ul__li{
-    /* background-color: antiquewhite; */
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -196,7 +189,6 @@ section{
 
 figure img{
     width: 100%;
-    /* margin-top: 30px; */
 }
 
 figcaption{
@@ -213,7 +205,6 @@ h3{
     margin: 0 10px 0 40px;
     width: 87%;
     padding-bottom: 20px;
-    /* padding: 0  20px 0 40px; */
 }
 
 .article__text p{
@@ -227,9 +218,7 @@ h3{
 
 /* BLOG CSS*/
 
-/* .main__container h1{
-    font-size: 2.2rem;
-} */
+
 
 .blog__title{
     background-color: var(--fondo-body);
@@ -240,7 +229,6 @@ h3{
 
 
 .article__blog{
-    /* background-color: aqua; */
     margin-bottom: 20px;
     height: max-content;
     position: relative;
@@ -250,7 +238,6 @@ h3{
 
 .article__blog figure{
     width: 100%;
-    /* background-color: blueviolet; */
     margin: 0;
 }
 
@@ -657,10 +644,7 @@ footer a:hover{
 
 /*DISPOSITIVOS MEDIANOS*/
 @media screen and (min-width: 480px){
-    body{
-        /* background-color: aqua; */
-    }
-
+  
     .hero__container{
         background-position: -80px;
     }
@@ -680,7 +664,6 @@ footer a:hover{
     article{
         display: flex;
         align-items: center;
-        /* background-color: bisque; */
         width: 95vw;
         margin: 0 auto;
     }
@@ -708,7 +691,6 @@ footer a:hover{
     }
 
     .article__container{
-        /* background-color: aqua; */
         display: grid;
         gap: 10px;
         grid-template-columns: 1fr 1fr;
@@ -740,7 +722,6 @@ footer a:hover{
     }
 
     .recent__articles{
-        /* background-color:bisque; */
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 20px;
@@ -790,9 +771,7 @@ footer a:hover{
 
 /*DISPOSITIVOS DESKTOP*/
 @media screen and (min-width: 769px){
-    body{
-        /* background-color: aqua; */
-    }
+   
 
     .hero__container{
         background-position: initial;
@@ -806,7 +785,6 @@ footer a:hover{
     }
 
     .hero__container h1{
-        /* background-color: aqua; */
         width: 35%;
         font-size: 3rem;
         margin-left: 20%;
@@ -852,8 +830,8 @@ footer a:hover{
     .blog__title{
         padding-left: 120px;
     }
+
     .article__container{
-        /* background-color: brown; */
         margin: 0 auto;
         grid-template-columns: repeat(4, 320px);
         grid-template-rows: 680px 620px;
@@ -876,10 +854,6 @@ footer a:hover{
         grid-column: 1/3;
     }
 
-    .article__blog{
-        /* background-color: bisque; */
-    }
-
     .article__blog img{
         width: 90%;
     }
@@ -889,7 +863,6 @@ footer a:hover{
     }
 
     .entrada__info{
-        /* background-color: blue; */
         width: 70%;
     }
 
@@ -898,12 +871,10 @@ footer a:hover{
     }
 
     .recent__articles{
-        /* background-color: aquamarine; */
         grid-template-columns: 300px;
     }
 
     .desktop__version:first-child{
-        /* background-color: yellow; */
         width: 50%;
         margin-left: 10%;
     }
@@ -917,12 +888,10 @@ footer a:hover{
     }
     
     .desktop__version .article__text{
-        /* background-color: yellow; */
         width: 95%;
     }
 
     .button__categories{
-        /* background-color: yellow; */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
