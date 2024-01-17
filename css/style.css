@@ -560,7 +560,7 @@ footer a:hover{
 /*DISPOSITIVOS MEDIANOS*/
 @media screen and (min-width: 480px){
     body{
-        /* background-color: aqua; */
+        background-color: aqua;
     }
 
     .hero__container{
@@ -628,6 +628,46 @@ footer a:hover{
         flex-direction: column;
     }
 
+    .main__info .entrada__section{
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    h3{
+        margin-top: 20px;
+    }
+
+    .recent__articles{
+        /* background-color:bisque; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+
+
+    .entrada__article p{
+        font-size: .7rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: var(--texto-gris);
+    }
+
+    .entrada__article img{
+        height: initial;
+    }
+
+    .entrada__article .article__text{
+        padding-bottom: 0;
+    }
+
+    .entrada__article .category__span a{
+        padding: 4px;
+        font-size: .8rem;
+    }
+
+    .button__categories{
+        padding-bottom: 80px;
+    }
 }
 
 /*DISPOSITIVOS DESKTOP*/
@@ -705,6 +745,8 @@ footer a:hover{
     .article__text{
         width: 50vw;
     }
+
+    
 
     footer{
         grid-template-columns: 1fr 1fr;
