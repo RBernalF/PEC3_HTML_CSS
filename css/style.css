@@ -227,15 +227,23 @@ h3{
 
 /* BLOG CSS*/
 
-.main__container h1{
+/* .main__container h1{
     font-size: 2.2rem;
+} */
+
+.blog__title{
+    background-color: var(--fondo-body);
+    padding: 20px 0 20px 10px;
+    margin-bottom: 0;
+    font-family: 'Noto Serif', serif;
 }
+
 
 .article__blog{
     /* background-color: aqua; */
     margin-bottom: 20px;
-    position: relative;
     height: max-content;
+    position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -248,11 +256,12 @@ h3{
 
 
 .article__blog figcaption{
-    background-color: var(--texto-blanco);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 2px 4px;
     position: absolute;
-    top: 36%;
+    top: 40%;
     right: 2%;
+    font-weight: 700;
 }
 
 
@@ -287,10 +296,13 @@ h3{
     color: var(--texto-gris);
     font-size: .8rem;
     margin: 10px;
+    font-weight: 700;
 }
+
 
 .article__blog h2{
     margin-top: 0;
+    font-family: 'Noto Serif', serif;
 }
 
 .article__blog h2 a{
@@ -315,6 +327,7 @@ h3{
     border-radius: 0;
     font-size: 1rem;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 
@@ -325,6 +338,7 @@ h3{
 
 .button__page{
     display: flex;
+    margin-top: 40px;
     justify-content: center;
     gap: 20px;
 }
@@ -358,6 +372,14 @@ h3{
 
 .selected a {
     color: var(--texto-blanco);
+}
+
+.blog__container{
+    padding-bottom: 100px;
+}
+
+.blog__container .article__text{
+    margin-left: 15px;
 }
 
 /*---------------------------------------------------------*/
@@ -656,6 +678,10 @@ footer a:hover{
         flex-direction: column;
     }
 
+    .article__blog figcaption{
+        top:32%;
+    }
+
     .article__blog:nth-child(even){
         flex-direction: column;
     }
@@ -752,7 +778,7 @@ footer a:hover{
 
     .blog__container{
         flex-direction: column;
-        width: 95%;
+        width: 100%;
     }
 
     .blog__container .article__text{
@@ -778,10 +804,27 @@ footer a:hover{
         height: 100%;
     }
 
+    .blog__title{
+        padding-left: 120px;
+    }
     .article__container{
         /* background-color: brown; */
-        grid-template-columns: repeat(4, 300px);
-        grid-template-rows: 650px 560px;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 320px);
+        grid-template-rows: 680px 620px;
+    }
+
+
+    .article__blog figcaption{
+        top: 30%;
+    }
+
+    .article__blog .fig__pos{
+        top: 28%;
+    }
+
+    .article__blog .fig__big__article{
+        top: 60%;
     }
 
     .first__article{
@@ -842,6 +885,10 @@ footer a:hover{
     .footer__politicas{
         display: flex;
         flex-direction: row;
+    }
+
+    .redes__sociales{
+        align-self:flex-end;
     }
    
 }
