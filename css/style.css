@@ -575,6 +575,7 @@ blockquote{
 iframe{
     width: 100%;
     height: 200px;
+    border: none;
 }
 
 
@@ -589,6 +590,7 @@ iframe{
 
 .video__text h2{
     margin-top: 10px;
+    font-size: 1.5rem;
 }
 
 
@@ -776,6 +778,7 @@ footer a:hover{
     #video__info h1{
         width: 90%;
         margin: 0 auto;
+        padding-bottom: 30px;
     }
 
     .videos__container{
