@@ -387,10 +387,17 @@ h3{
 /* ENTRADAS CSS*/
 
 
+.links{
+    padding-bottom: 20px
+}
 
 .links a{
     color: var(--color-texto);
     text-decoration: none;
+}
+
+.links a:hover{
+    color: var(--contraste-lila);
 }
 
 .principal__img{
@@ -403,6 +410,7 @@ h3{
 .principal__img h1{
     font-size: 2.5rem;
     margin-left: 3%;
+    font-family: 'Noto Serif', serif;
 }
 
 .principal__img p{
@@ -417,6 +425,7 @@ h3{
 
 .blue__text{
     color: var(--color-texto);
+    font-weight: 700;
 }
 
 .main__info{
@@ -436,9 +445,14 @@ h3{
     margin-left: .2rem;
 }
 
+.entrada__section{
+    padding: 0 10px;
+}
+
 .main__info section h2{
     width: 80%;
     font-size: 1.8rem;
+    font-family: 'Noto Serif', serif;
 }
 
 .main__info section h2 a{
@@ -452,13 +466,19 @@ h3{
 }
 
 .main__info section p{
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .main__info a{
     color: var(--contraste-lila);
+    font-weight: 700;
     text-decoration: none;
     border-bottom: 1px dotted var(--contraste-lila);
+}
+
+.main__info a:hover{
+    color: var(--color-texto);
+    border-bottom: 1px dotted var(--color-texto);
 }
 
 .main__info ol{
@@ -496,17 +516,18 @@ blockquote{
 
 .description{
     font-size: .8rem;
+    font-weight: 700;
 }
 
 .button__categories{
-    /* background-color: bisque; */
     display: flex;
     gap: 10px;
+    padding-bottom: 90px;
 }
 
 .button__category{
     background-color: var(--texto-blanco);
-    padding: 7px 4px;
+    padding: 4px;
     width: max-content;
     border: 1px solid var(--color-texto);
 }
@@ -519,11 +540,32 @@ blockquote{
 .button__category a{
     color: var(--color-texto);
     text-decoration: none;
-    font-size: .9rem;
+    font-size: .8rem;
+    font-weight: 700;
 }
 
 .button__category a:hover{
     color: var(--texto-blanco);
+}
+
+.entrada__titulo{
+    padding-top: 60px;
+}
+
+.entrada__article .article__text{
+    margin-left: 10px;
+}
+
+.entrada__article h2{
+    margin-bottom: 10px;
+}
+
+.entrada__article h2 a{
+    font-size: 1.1rem;
+}
+
+.entrada__article .grey__text{
+    margin-top: 0;
 }
 
 /*---------------------------------------------------------*/
@@ -849,7 +891,7 @@ footer a:hover{
     }
 
     .entrada__container{
-        /* background-color: black; */
+        padding-bottom: 100px;
     }
 
     .recent__articles{
@@ -857,6 +899,15 @@ footer a:hover{
         grid-template-columns: 300px;
     }
 
+    .desktop__version:first-child{
+        /* background-color: yellow; */
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    .desktop__version .main__info{
+        width: 90%;
+    }
 
     .desktop__version img{
         width: 100%;
@@ -872,6 +923,7 @@ footer a:hover{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 300px;
     }
 
     .videos__container{
